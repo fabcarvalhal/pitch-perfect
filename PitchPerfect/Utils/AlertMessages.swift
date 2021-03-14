@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: Alerts
 struct AlertMessages {
     static let dismissAlert = "Dismiss"
     static let recordingDisabledTitle = "Recording Disabled"
