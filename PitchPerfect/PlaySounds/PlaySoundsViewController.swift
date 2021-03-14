@@ -75,9 +75,7 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func stopPlay(_ sender: AnyObject) {
         audioMixer.stopSound()
     }
-}
-
-extension PlaySoundsViewController: AudioMixerDelegate {
+    
     // MARK: Audio Functions
     func setupAudio() {
         do {
@@ -86,9 +84,5 @@ extension PlaySoundsViewController: AudioMixerDelegate {
         } catch {
             alertRenderer.showSimpleAlert(AlertMessages.audioFileError, message: String(describing: error))
         }
-    }
-    
-    func audioMixerDidFinishPlaying() {
-        setupUI(for: .stoppped)
     }
 }
