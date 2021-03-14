@@ -10,12 +10,8 @@ import UIKit
 // MARK: - PlaySoundsViewController
 extension PlaySoundsViewController {
     
-    // MARK: PlayingState (raw values correspond to sender tags)
-    enum PlayingState { case playing, notPlaying }
-    
-    // MARK: UI Functions
-    func configureUI(_ playState: PlayingState) {
-        switch(playState) {
+    func setupUI(for state: PlayingState) {
+        switch(state) {
         case .playing:
             setPlayButtonsEnabled(false)
             stopPlayingButton.isEnabled = true

@@ -25,13 +25,23 @@ class PlaySoundsViewController: UIViewController {
         return AlertRenderer(with: self)
     }()
 
+    enum PlayingState {
+        case playing
+        case stoppped
+    }
+    
     enum ButtonType: Int {
-        case slow = 0, fast, chipmunk, vader, echo, reverb
+        case slow = 0
+        case fast
+        case chipmunk
+        case vader
+        case echo
+        case reverb
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        configureUI(.notPlaying)
+        setupUI(for: .stoppped)
     }
     
     override func viewDidLoad() {
@@ -59,7 +69,7 @@ class PlaySoundsViewController: UIViewController {
         } catch {
             alertRenderer.showSimpleAlert(AlertMessages.audioEngineError, message: AlertMessages.audioEngineError)
         }
-        configureUI(.playing)
+        setupUI(for: .playing)
     }
     
     @IBAction func stopPlay(_ sender: AnyObject) {
@@ -70,7 +80,6 @@ class PlaySoundsViewController: UIViewController {
 extension PlaySoundsViewController: AudioMixerDelegate {
     // MARK: Audio Functions
     func setupAudio() {
-        // initialize (recording) audio file
         do {
             audioMixer = try AudioMixer(with: recordedAudioUrl!)
             audioMixer.delegate = self
@@ -80,6 +89,6 @@ extension PlaySoundsViewController: AudioMixerDelegate {
     }
     
     func audioMixerDidFinishPlaying() {
-        configureUI(.notPlaying)
+        setupUI(for: .stoppped)
     }
 }
