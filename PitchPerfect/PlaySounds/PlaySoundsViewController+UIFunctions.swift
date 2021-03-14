@@ -15,7 +15,7 @@ extension PlaySoundsViewController {
         case .playing:
             setPlayButtonsEnabled(false)
             stopPlayingButton.isEnabled = true
-        case .notPlaying:
+        case .stoppped:
             setPlayButtonsEnabled(true)
             stopPlayingButton.isEnabled = false
         }
