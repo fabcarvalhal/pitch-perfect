@@ -14,8 +14,6 @@ extension RecordAudioViewController: AudioRecorderDelegate {
             alertRenderer.showSimpleAlert(AlertMessages.recordingFailedMessage, message: AlertMessages.audioRecorderError)
         case .audioSessionError:
             alertRenderer.showSimpleAlert(AlertMessages.recordingFailedMessage, message: AlertMessages.audioSessionError)
-        @unknown default:
-            alertRenderer.showSimpleAlert(AlertMessages.recordingFailedTitle, message: AlertMessages.recordingFailedMessage)
         }
     }
 }
