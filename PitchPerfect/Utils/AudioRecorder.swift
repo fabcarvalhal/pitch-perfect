@@ -32,6 +32,7 @@ class AudioRecorder {
     
     func recordAudio(recorderDelegate: AVAudioRecorderDelegate) {
         guard let filePathUrl = getFilePathUrl() else {
+            delegate?.didFailToRecord(reason: .audioRecorderError)
             return
         }
         
