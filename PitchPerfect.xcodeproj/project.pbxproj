@@ -19,9 +19,9 @@
 		7F8D23B625FD9DB500E5C4E3 /* RecordAudioViewController+AudioRecorderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8D23B525FD9DB500E5C4E3 /* RecordAudioViewController+AudioRecorderDelegate.swift */; };
 		7FA4A12325FDA4E30088F915 /* PlaySoundsViewController+AudioMixerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4A12225FDA4E30088F915 /* PlaySoundsViewController+AudioMixerDelegate.swift */; };
 		7FBEED6325FD6FF9006CF268 /* AudioMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEED6225FD6FF9006CF268 /* AudioMixer.swift */; };
-		7FBEED6625FD8E9D006CF268 /* PlaySoundsViewController+UIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEED6525FD8E9D006CF268 /* PlaySoundsViewController+UIFunctions.swift */; };
 		7FBEED6A25FD928D006CF268 /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEED6925FD928D006CF268 /* AlertMessages.swift */; };
 		7FBEED6D25FD9397006CF268 /* AlertRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEED6C25FD9397006CF268 /* AlertRenderer.swift */; };
+		7FC091D525FED01900611C05 /* PlaySoundsViewController+UIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC091D425FED01900611C05 /* PlaySoundsViewController+UIFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +39,9 @@
 		7F8D23B525FD9DB500E5C4E3 /* RecordAudioViewController+AudioRecorderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecordAudioViewController+AudioRecorderDelegate.swift"; sourceTree = "<group>"; };
 		7FA4A12225FDA4E30088F915 /* PlaySoundsViewController+AudioMixerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+AudioMixerDelegate.swift"; sourceTree = "<group>"; };
 		7FBEED6225FD6FF9006CF268 /* AudioMixer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMixer.swift; sourceTree = "<group>"; };
-		7FBEED6525FD8E9D006CF268 /* PlaySoundsViewController+UIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+UIFunctions.swift"; sourceTree = "<group>"; };
 		7FBEED6925FD928D006CF268 /* AlertMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
 		7FBEED6C25FD9397006CF268 /* AlertRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRenderer.swift; sourceTree = "<group>"; };
+		7FC091D425FED01900611C05 /* PlaySoundsViewController+UIFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+UIFunctions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 		7F6C0FFB25FD56E900B3593B /* PlaySounds */ = {
 			isa = PBXGroup;
 			children = (
+				7FC091D425FED01900611C05 /* PlaySoundsViewController+UIFunctions.swift */,
 				7F6C0FFC25FD56F500B3593B /* PlaySoundsViewController.swift */,
-				7FBEED6525FD8E9D006CF268 /* PlaySoundsViewController+UIFunctions.swift */,
 				7FA4A12225FDA4E30088F915 /* PlaySoundsViewController+AudioMixerDelegate.swift */,
 			);
 			path = PlaySounds;
@@ -188,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FBEED6625FD8E9D006CF268 /* PlaySoundsViewController+UIFunctions.swift in Sources */,
 				7FBEED6325FD6FF9006CF268 /* AudioMixer.swift in Sources */,
 				7FA4A12325FDA4E30088F915 /* PlaySoundsViewController+AudioMixerDelegate.swift in Sources */,
 				7F3D030E25FD480B004A262D /* RecordAudioViewController.swift in Sources */,
@@ -197,6 +196,7 @@
 				7FBEED6A25FD928D006CF268 /* AlertMessages.swift in Sources */,
 				7F3D030A25FD480B004A262D /* AppDelegate.swift in Sources */,
 				7F8D23B625FD9DB500E5C4E3 /* RecordAudioViewController+AudioRecorderDelegate.swift in Sources */,
+				7FC091D525FED01900611C05 /* PlaySoundsViewController+UIFunctions.swift in Sources */,
 				7F3D032125FD4F50004A262D /* AudioRecorder.swift in Sources */,
 				7F6C0FFD25FD56F500B3593B /* PlaySoundsViewController.swift in Sources */,
 				7F3D030C25FD480B004A262D /* SceneDelegate.swift in Sources */,
