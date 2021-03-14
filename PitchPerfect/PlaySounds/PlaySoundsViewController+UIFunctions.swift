@@ -7,7 +7,6 @@
 
 import UIKit
 
-// MARK: - PlaySoundsViewController
 extension PlaySoundsViewController {
     
     func setupUI(for state: PlayingState) {
